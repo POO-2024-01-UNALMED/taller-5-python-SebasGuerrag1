@@ -9,7 +9,7 @@ class Pez(Animal):
         self._colorEscamas= colorEscamas
         Pez._listado.append(self)
     @classmethod
-    def cantidadPez(cls):
+    def cantidadPeces(cls):
         return len(cls._listado)
     
     def movimiento(self):
