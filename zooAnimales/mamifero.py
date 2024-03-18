@@ -14,10 +14,9 @@ class Mamifero(Animal):
         return len(cls._listado)
         
     @classmethod
-    def crearCaballo( cls,nombre, edad, genero):
-        cls.caballos=+1
-        animalito=Mamifero(nombre,edad,"pradera",genero,True,4)
-        return animalito
+    def crearCaballo(cls,nombre,edad,genero,):
+        cls.caballos+=1
+        return Mamifero(nombre,edad,"selva",genero,True,4)
     @classmethod
     def crearLeon(cls, nombre, edad, genero):
         cls.leones=+1
