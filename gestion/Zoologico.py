@@ -1,10 +1,11 @@
 class zoologico:
-    def __init__(self,nombre,ubicacion,zonas=None):
+    _zonas=[]
+    def __init__(self,nombre,ubicacion):
         self._nombre=nombre
         self._ubicacion=ubicacion
-        if zonas==None:
-            self._zonas=[]
+    
 
+    @classmethod    
     def agregarZonas(self,zona):
         self._zonas.append(zona)
         zona.setZoo(self)
