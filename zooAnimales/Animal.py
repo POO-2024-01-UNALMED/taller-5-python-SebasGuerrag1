@@ -1,13 +1,13 @@
 import zooAnimales
 class Animal():
-    _totalAnimales=0
+    totalAnimales=0
     def __init__ (self,nombre, edad=None,habitat=None,genero=None,zona=None):
         self._nombre=nombre
         self._edad=edad
         self._habitat=habitat
         self._genero=genero
         self._zona=zona
-        Animal._totalAnimales +=1
+        Animal.totalAnimales +=1
 
     def movimiento():
         return "desplazarce"
