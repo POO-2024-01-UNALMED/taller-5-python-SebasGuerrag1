@@ -1,4 +1,4 @@
-class Zoologico:
+class zoologico:
     def __init__(self,nombre,ubicacion,zonas=None):
         self._nombre=nombre
         self._ubicacion=ubicacion

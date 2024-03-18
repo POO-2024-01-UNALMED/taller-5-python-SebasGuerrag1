@@ -1,5 +1,5 @@
-import Animal
-class Anfibio(Animal):
+import animal
+class Anfibio(animal):
     ranas=0
     salamandras=0
     _listado=[]

@@ -1,5 +1,5 @@
-import Animal
-class Reptil(Animal):
+import animal
+class Reptil(animal):
     iguanas=0
     serpientes=0
     _listado=[]
