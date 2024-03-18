@@ -8,7 +8,7 @@ class Zoologico:
     @classmethod    
     def agregarZonas(self,zona):
         self._zonas.append(zona)
-        zona.setZoo(self)
+        
     def cantidadTotalAnimales(self):
         Animalitos=0
         for i in self._zonas:
