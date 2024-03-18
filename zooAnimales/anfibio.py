@@ -3,8 +3,8 @@ class Anfibio(Animal):
     ranas=0
     salamandras=0
     _listado=[]
-    def _init_(self, nombre, edad, habitat, genero, colorPiel, venenoso):
-        super()._init_(nombre, edad, habitat, genero)
+    def __init__(self, nombre=None, edad=None, habitat=None, genero=None, colorPiel=None, venenoso=None):
+        super(). __init__(nombre, edad, habitat, genero)
         self._colorPiel = colorPiel
         self._venenoso= venenoso
         Anfibio._listado.append(self)
@@ -14,14 +14,16 @@ class Anfibio(Animal):
     
     def movimiento(self):
         return "saltar"
-    
-    def crearRana( nombre, edad, genero):
-        Anfibio.ranas+=1
-        return Anfibio(nombre, edad, "selva" , genero, "rojo",True)
-        
-    def crearSalamandra( nombre, edad, genero):
-        Anfibio.salamandras+=1
-        return Anfibio(nombre, edad, "selva" , genero, "negro y amarillo",False)
+    @classmethod
+    def crearRana(cls,nombre, edad, genero):
+        cls.ranas+=1
+        animalito= Anfibio(nombre, edad, "selva" , genero, "rojo",True)
+        return animalito
+    @classmethod   
+    def crearSalamandra(cls,nombre, edad, genero):
+        cls.salamandras+=1
+        animalito=Anfibio(nombre, edad, "selva" , genero, "negro y amarillo",False)
+        return animalito
     
     def getColorPiel(self):
         return self._colorPiel

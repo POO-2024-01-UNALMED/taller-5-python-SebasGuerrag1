@@ -1,6 +1,6 @@
 class Zoologico:
     _zonas=[]
-    def _init_(self,nombre,ubicacion):
+    def __init__(self,nombre=None,ubicacion=None):
         self._nombre=nombre
         self._ubicacion=ubicacion
     

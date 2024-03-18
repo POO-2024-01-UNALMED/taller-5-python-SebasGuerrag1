@@ -1,5 +1,5 @@
 class Zona:
-    def _init_(self,nombre=None,zoo=None,animales=None):
+    def __init__(self,nombre=None,zoo=None,animales=None):
         self._nombre= nombre
         self._zoo= zoo
         if animales==None:

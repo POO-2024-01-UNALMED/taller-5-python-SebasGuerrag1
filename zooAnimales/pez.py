@@ -3,8 +3,8 @@ class Pez(Animal):
     salmones=0
     bacalaos=0
     _listado=[]
-    def _init_(self, nombre, edad, habitat, genero, colorEscamas,cantidadAletas):
-        super()._init_(nombre, edad, habitat, genero)
+    def __init__(self, nombre, edad, habitat, genero, colorEscamas,cantidadAletas):
+        super(). __init__(nombre, edad, habitat, genero)
         self._cantidadAletas = cantidadAletas
         self._colorEscamas= colorEscamas
         Pez._listado.append(self)
@@ -16,13 +16,15 @@ class Pez(Animal):
         return "nadar"
     
     @classmethod
-    def crearSalmon( nombre, edad, genero):
-        Pez.salmones+=1
-        return Pez(nombre, edad, "oceano" , genero, "rojo",6)
+    def crearSalmon(cls,nombre, edad, genero):
+        cls.salmones+=1
+        animalito=Pez(nombre, edad, "oceano" , genero, "rojo",6)
+        return animalito
     @classmethod  
-    def crearBacalao( nombre, edad, genero):
-        Pez.bacalaos+=1
-        return (nombre, edad, "oceano" , genero, "gris",6)
+    def crearBacalao(cls,nombre, edad, genero):
+        cls.bacalaos+=1
+        animalito=Pez(nombre, edad, "oceano" , genero, "gris",6)
+        return animalito
     
     def getColorEscamas(self):
         return self._colorEscamas
