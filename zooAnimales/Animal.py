@@ -29,6 +29,9 @@ class Animal:
         else:
             return "Mi nombre es {}, tengo una edad de {}, habito en {} y mi genero es {}".format(self.getNombre(), self.getEdad(), self.getHabitat(), self.getGenero())
     
+    def toString(self):
+        return self.__str__()
+
     
     @classmethod
     def getTotalAnimales(cls):
