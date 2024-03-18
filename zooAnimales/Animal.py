@@ -1,6 +1,4 @@
 import zooAnimales
-import gestion
-
 class Animal:
     _totalAnimales=0
     def __init__ (self,nombre, edad,habitat,genero,zona=None):
@@ -62,8 +60,8 @@ class Animal:
         self._genero = genero
 
     
-    def getZona(self):
+    def getZonas(self):
         return self._zona
 
-    def setZona(self, zona):
+    def setZonas(self, zona):
         self._zona = zona
