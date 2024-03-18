@@ -1,4 +1,4 @@
-class Zona:
+class Zona():
     def __init__(self,nombre=None,zoo=None,animales=None):
         self._nombre= nombre
         self._zoo= zoo

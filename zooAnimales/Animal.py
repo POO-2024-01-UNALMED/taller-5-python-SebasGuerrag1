@@ -1,5 +1,5 @@
 import zooAnimales
-class Animal:
+class Animal():
     _totalAnimales=0
     def __init__ (self,nombre, edad=None,habitat=None,genero=None,zona=None):
         self._nombre=nombre
