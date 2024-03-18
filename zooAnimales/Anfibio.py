@@ -13,7 +13,7 @@ class Anfibio(Animal):
         return len(cls._listado)
     
     def movimiento():
-        return "Saltar"
+        return "saltar"
     
     def crearRana( nombre, edad, genero):
         Anfibio.ranas+=1
