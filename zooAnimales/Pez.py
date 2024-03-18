@@ -1,4 +1,5 @@
 from zooAnimales.animal import Animal
+import gestion
 class Pez(Animal):
     salmones=0
     bacalaos=0

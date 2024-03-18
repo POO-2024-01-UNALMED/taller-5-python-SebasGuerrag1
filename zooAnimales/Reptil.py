@@ -1,4 +1,5 @@
 from zooAnimales.animal import Animal
+import gestion
 class Reptil(Animal):
     iguanas=0
     serpientes=0
@@ -15,7 +16,7 @@ class Reptil(Animal):
     def movimiento():
         return "reptar"
     
-    def creariguana( nombre, edad, genero):
+    def crearIguana( nombre, edad, genero):
         Reptil.iguanas+=1
         return Reptil(nombre, edad, "humedal" , genero, "verde",3)
         

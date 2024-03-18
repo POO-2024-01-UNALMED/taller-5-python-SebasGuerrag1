@@ -1,4 +1,5 @@
 from zooAnimales.animal import Animal
+import gestion
 class Ave(Animal):
     halcones = 0
     aguilas = 0
@@ -18,11 +19,13 @@ class Ave(Animal):
     
     def crearHalcon( nombre, edad, genero):
         Ave.halcones+=1
-        return Ave(nombre, edad, "montanas" , genero, "cafe glorioso")
+        ave=Ave(nombre, edad, "montanas" , genero, "cafe glorioso")
+        return ave
 
     def crearAguila( nombre, edad, genero):
         Ave.aguilas+=1
-        return Ave(nombre, edad, "montanas" , genero, "blanco y amarillo")
+        ave= Ave(nombre, edad, "montanas" , genero, "blanco y amarillo")
+        return ave
 
     
     @classmethod
