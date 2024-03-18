@@ -24,10 +24,11 @@ class Animal:
            "Anfibios: " + str(Anfibio.cantidad_anfibios())
 
     def __str__(self):
-        if self.zona is not None:
-            return "Mi nombre es {}, tengo una edad de {}, habito en {} y mi genero es {}, la zona en la que me ubico es {}, en el {}".format(self.getNombre(), self.getEdad(), self.getHabitat(), self.getGenero(), self.zona.getNombre(), self.zona.getZoo())
-        else:
-            return "Mi nombre es {}, tengo una edad de {}, habito en {} y mi genero es {}".format(self.getNombre(), self.getEdad(), self.getHabitat(), self.getGenero())
+        string = f"Mi nombre es {self._nombre}, tengo una edad de {self._edad}, habito en {self._habitat} y mi genero es {self._genero}"
+        if self._zona != None:
+            string += f", la zona en la que me ubico es {self._zona}, en el {self._zoo}"
+        return string
+
     
     def toString(self):
         return self.__str__()
