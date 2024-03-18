@@ -1,5 +1,5 @@
 import animal
-class Ave(animal):
+class Ave(Animal):
     halcones = 0
     aguilas = 0
     _listado = []

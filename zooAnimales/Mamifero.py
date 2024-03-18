@@ -1,5 +1,5 @@
 import animal
-class Mamifero(animal):
+class Mamifero(Animal):
     caballos=0
     leones=0
     _listado=[]
