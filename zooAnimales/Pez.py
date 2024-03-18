@@ -8,6 +8,7 @@ class Pez(Animal):
         super().__init__(nombre, edad, habitat, genero)
         self._cantidadAletas = cantidadAletas
         self._colorEscamas= colorEscamas
+        Animal.totalAnimales+=1
         Pez._listado.append(self)
     @classmethod
     def cantidadPez(cls):
@@ -35,7 +36,8 @@ class Pez(Animal):
         self._cantidadAletas=valor
     
     @classmethod
-    def setListado(cls,lista):
-        cls._listado=lista
+    def setListado(cls,listado):
+        cls._listado=[]
+        cls._listado=listado
     def getListado(cls):
         return cls._listado
