@@ -12,7 +12,7 @@ class Reptil(Animal):
     def cantidadReptil(cls):
         return len(cls._listado)
     
-    def movimiento():
+    def movimiento(self):
         return "reptar"
     
     @classmethod

@@ -12,7 +12,7 @@ class Pez(Animal):
     def cantidadPez(cls):
         return len(cls._listado)
     
-    def movimiento():
+    def movimiento(self):
         return "nadar"
     
     @classmethod

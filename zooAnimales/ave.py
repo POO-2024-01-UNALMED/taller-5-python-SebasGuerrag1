@@ -14,7 +14,7 @@ class Ave(Animal):
         return len(cls._listado)
     
     
-    def movimiento():
+    def movimiento(self):
         return "volar"
     
     @classmethod
