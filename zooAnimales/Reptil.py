@@ -1,10 +1,9 @@
 from zooAnimales.animal import Animal
-import gestion
 class Reptil(Animal):
     iguanas=0
     serpientes=0
     _listado=[]
-    def __init__(self, nombre, edad, habitat, genero, colorEscamas,largoCola):
+    def __init__(self, nombre=None, edad=None, habitat=None, genero=None, colorEscamas=None,largoCola=None):
         super().__init__(nombre, edad, habitat, genero)
         self._largoCola = largoCola
         self._colorEscamas= colorEscamas

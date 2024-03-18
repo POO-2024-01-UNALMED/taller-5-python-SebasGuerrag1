@@ -1,10 +1,10 @@
 from zooAnimales.animal import Animal
-import gestion
+
 class Pez(Animal):
     salmones=0
     bacalaos=0
     _listado=[]
-    def __init__(self, nombre, edad, habitat, genero, colorEscamas,cantidadAletas):
+    def __init__(self, nombre=None, edad=None, habitat=None, genero=None, colorEscamas=None,cantidadAletas=None):
         super().__init__(nombre, edad, habitat, genero)
         self._cantidadAletas = cantidadAletas
         self._colorEscamas= colorEscamas

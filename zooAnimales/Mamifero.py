@@ -1,10 +1,9 @@
 from zooAnimales.animal import Animal
-import gestion
 class Mamifero(Animal):
     caballos=0
     leones=0
     _listado=[]
-    def __init__(self,nombre,edad, habitat,genero,pelaje, patas):
+    def __init__(self,nombre=None,edad=None, habitat=None,genero=None,pelaje=None, patas=None):
         super().__init__(self,nombre,edad, habitat,genero,)
         self._pelaje=pelaje
         self._patas= patas
