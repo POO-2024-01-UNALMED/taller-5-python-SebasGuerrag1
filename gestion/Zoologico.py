@@ -1,8 +1,13 @@
+
 class Zoologico:
     _zonas=[]
-    def __init__(self,nombre,ubicacion):
+
+    def __init__(self,nombre=None,ubicacion=None):
         self._nombre=nombre
         self._ubicacion=ubicacion
+        
+    def __str__(self):
+        return self._nombre
     
 
     @classmethod    

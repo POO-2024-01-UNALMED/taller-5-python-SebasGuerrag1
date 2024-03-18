@@ -9,8 +9,9 @@ class Animal:
         self._zona=zona
         Animal._totalAnimales +=1
 
-    def movimiento(self):
+    def movimiento():
         return "Desplazarse"
+    
     @classmethod
     def totalPorTipo(cls):
         return "Mamiferos : "+str(zooAnimales.mamifero.Mamifero.cantidadMamiferos())+"\n"+"Aves : "+str(zooAnimales.ave.Ave.cantidadAves())+"\n"+"Reptiles : "+str(zooAnimales.reptil.Reptil.cantidadReptiles())+"\n"+"Peces : "+str(zooAnimales.pez.Pez.cantidadPeces())+"\n"+"Anfibios : "+str(zooAnimales.anfibio.Anfibio.cantidadAnfibios())
